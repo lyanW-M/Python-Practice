@@ -3,10 +3,10 @@
 # You'll need to use print multiple times to create your picture.
 
 print("""   _______
- /          \\
-|    O   O    |
-|       V      |
- \\_______/
+ /         \\
+|    O   O  |
+|       V   |
+ \_______/
 """)
 
 
