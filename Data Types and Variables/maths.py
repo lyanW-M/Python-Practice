@@ -41,14 +41,27 @@ print(345 % 32)
 
 operations = input("What operation would you like to choose? Addition, Subtraction, Multiplication, Division\n")
 
-if operations == "addition" "Addition":
-    add1 = input("Type in the first number\n")
-    add2 = input("Type in the second number\n")
+if operations in ["addition", "Addition"]:
+    add1 = int(input("Type in the first number\n"))
+    add2 = int(input("Type in the second number\n"))
     print(add1 + add2, "is your answer")
 
-elif operations == "subtraction" "Subtraction":
-    sub1 = input("Type in the first number\n")
-    sub2 = input("Type in the second number\n")
+elif operations in ["subtraction", "Subtraction"]:
+    sub1 = int(input("Type in the first number\n"))
+    sub2 = int(input("Type in the second number\n"))
     print(sub1 - sub2, "is your answer")
+
+elif operations in ["multiplication", "Multiplication"]:
+    mult1 = int(input("Type in the first number\n"))
+    mult2 = int(input("Type in the second number\n"))
+    print(mult1 * mult2, "is your answer")
+
+elif operations in ["division", "Division"]:
+    div1 = int(input("Type in the first number\n"))
+    div2 = int(input("Type in the second number\n"))
+    print(div1 / div2, "is your answer")
+
+else:
+    print("Filthy monkey, can't even type properly")
 
 
