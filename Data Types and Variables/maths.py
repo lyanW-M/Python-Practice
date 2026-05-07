@@ -41,9 +41,14 @@ print(345 % 32)
 
 operations = input("What operation would you like to choose? Addition, Subtraction, Multiplication, Division\n")
 
-if operations == "addition":
+if operations == "addition" "Addition":
     add1 = input("Type in the first number\n")
     add2 = input("Type in the second number\n")
-    print(add1 + add2, " is your answer")
+    print(add1 + add2, "is your answer")
+
+elif operations == "subtraction" "Subtraction":
+    sub1 = input("Type in the first number\n")
+    sub2 = input("Type in the second number\n")
+    print(sub1 - sub2, "is your answer")
 
 
