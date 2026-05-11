@@ -53,7 +53,7 @@ print("See you on the field!")
 
 CEOname = input("Wait hold up, by any chance do you know one of our 3 CEO's names?")
 
-if CEOname == ["Grey", "Gray", "Gru"]:
+if CEOname in ["Grey", "Gray", "Gru"]:
     print("Oh cool cool")
 else:
     print("Boring")
