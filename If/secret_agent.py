@@ -51,6 +51,14 @@ print("See you on the field!")
 # Ask more questions to give your spy more information
 # Look up how to use 'and' and 'or' to force more conditions (eg. they must be one of 3 users AND get the password correct)
 
+CEOname = input("Wait hold up, by any chance do you know one of our 3 CEO's names?")
+
+if CEOname == ["Grey", "Gray", "Gru"]:
+    print("Oh cool cool")
+else:
+    print("Boring")
+
+
 # ___________________________
 
 # EXPERT (For those who already know python)
