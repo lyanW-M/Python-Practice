@@ -53,7 +53,7 @@ print("See you on the field!")
 
 CEOname = input("Wait hold up, by any chance do you know one of our 3 CEO's names?")
 
-if CEOname in ["Grey", "Gray", "Gru"]:
+if CEOname in["Grey", "Gray", "Gru"]:
     print("Oh cool cool")
 else:
     print("Boring")
@@ -66,3 +66,20 @@ else:
 # Create a SPY ID GENERATOR
 # Your user must login using the correct password to access the generator
 # Use a bunch of questions to generate an id. Eg. If their name has 4 or fewer
+
+print("WAIT, WE FORGOT TO GIVE YOU A COOL NAME")
+if len (name) < 5:
+    nick1 = ("Sonion")
+elif len (name) < 10:
+    nick1 = ("Sonbrero")
+elif len (name) >= 10:
+    nick1 = ("Sonionrings")
+
+if age < 18:
+    nick2 = ("Sigma")
+elif age < 13:
+    nick2 = ("Alpha")
+elif age >= 18:
+    nick2 = ("Unc")
+
+print("You're nickname is....", nick1, nick2)
