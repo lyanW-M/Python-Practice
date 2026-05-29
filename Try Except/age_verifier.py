@@ -1,0 +1,51 @@
+# =====================================================================
+# PROGRAM: Age verification
+#           Verify the user's age is over 18 to give access (or deny access)
+#           Keep asking for input until they've given a valid age
+# =====================================================================
+
+# VARIABLES
+# TODO Create a variable for valid input and set it to false
+# TODO Create a variable to old the user's age and set it to "" (blank)
+
+# GET INPUT
+# TODO Start a loop while the input is invalid
+
+    # TODO Ask the user for their age and save it
+
+    #TRY
+    # TODO Create a try statement
+        # TODO Change the input into an integer and resave it
+        # TODO Set the valid input variable to true
+
+    # FAIL TO CONVERT TO INTEGER
+    # TODO Add an except statement
+    # TODO Tell the user their input was invalid
+
+# Unindented = Loop has finished so the input must be valid now
+
+# CHECK AGE
+# TODO Check if they are older than 18 and tell them they have access if they are
+# TODO Check if they are older than 13 and tell them they have partial access if they are.
+# TODO Otherwise tell them access has been denied
+
+
+# ===================================================================
+# EXTENSION
+# Create a avatar creator for them to use if they get access. There should be 2 versions (full and partial)
+# Eg. Full can choose: character class (warrior, rogue), hair colour, eye colour; partial
+
+age = input("Please enter your age: ")
+
+while True:
+    try:
+        age = input("Please enter your age: ")
+        age = int(age)
+        if age >= 18:
+            print("You have access to the full site!")
+        elif age >= 13:
+            print("You have access to the partial site!")
+        else:
+            print("Access denied.")
+    except ValueError:
+        print("Invalid input. Please enter a valid age.")
