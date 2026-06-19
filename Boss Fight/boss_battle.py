@@ -5,8 +5,9 @@ print("Nivedh has 100 health and Big Chungus has 150 health.\n")
 print("Use your weapons strategically depending on the situation.\n")
 
 # Stats
-bossHealth = 150
-playerHealth = 100
+boss_health = 150
+MAX_HEALTH = 100
+playerHealth = MAX_HEALTH
 
 # Equipment
 healAmount = 45
@@ -58,9 +59,14 @@ while not end():
         print()
 
     elif action == "heal":
+        if playerHealth == MAX_HEALTH:
+            print("Your health is already full. You can't heal right now.\n")
+            continue
         if healBottle > 0:
             healBottle -= 1
             playerHealth += healAmount
+            if playerHealth > MAX_HEALTH:
+                playerHealth = MAX_HEALTH
             print(f"You use a heal bottle and restore {healAmount} health!")
             print()
         else:
