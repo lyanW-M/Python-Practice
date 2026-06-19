@@ -25,9 +25,8 @@ def calculate_area():
     width = float(input("Enter the width of the rectangle: "))
     area = length * width
     print(f"The area of the rectangle is: {area}")
-    return
 
-def calculate_circumference(radius, diameter):
+def calculate_circumference():
     choice_circumference = input("Do you want to calculate the circumference with the radius or diameter? (Enter 'radius' or 'diameter'): ").lower().strip()
     if choice_circumference == "radius":
         radius = float(input("Enter the radius of the circle: "))
@@ -39,19 +38,21 @@ def calculate_circumference(radius, diameter):
         print(f"The circumference of the circle is: {circumference}")
     else:
         print("Invalid choice. Please enter 'radius' or 'diameter'.")
-        return
-    return
 
-print("Welcome to the Geometry Helper!")
-print("Choose a calculation to perform:")
-print("1. Area of a Rectangle")
-print("2. Circumference of a Circle")
-choice = input("Enter your choice (1 or 2): ")
-while choice not in ["1", "2"]:
+while True:
+    print("Welcome to the Geometry Helper!")
+    print("Choose a calculation to perform:")
+    print("1. Area of a Rectangle")
+    print("2. Circumference of a Circle")
+    print("3. Exit")
+    choice = input("Enter your choice (1 or 2 or 3): ")
     if choice == "1":
         calculate_area()
     elif choice == "2":
         calculate_circumference()
+    elif choice == "3":
+        print("Exiting the program. Goodbye!")
+        break
     else:
         print("Invalid choice. Please try again.")
 # =====================================================================
