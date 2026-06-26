@@ -84,14 +84,15 @@ while True:
         print(f"Your score is {score} out of 7, better luck next time!")
 
     # Replay Option
-    replay = input("Do you want to play again? (yes/no)\n")
-    replay = replay.upper().strip()
-    if replay == "YES" or replay == "Y":
-        print("Starting a new game...")
-        continue
-    elif replay == "NO" or replay == "N":
-        print("Thanks for playing! Goodbye!")
-    else:
-        print("Invalid input. Exiting the game.")
-
-        break
+    while True:
+        replay = input("Do you want to play again? (yes/no)\n")
+        replay = replay.upper().strip()
+        if replay == "YES":
+            print("Starting a new game...")
+            break
+        elif replay == "NO":
+            print("Thanks for playing! Goodbye!")
+            exit()
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
+            continue
